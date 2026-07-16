@@ -1,0 +1,108 @@
+/* Estrutura Base (Mantida) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* border: 1px solid rgb(243, 23, 7); */
+}
+
+header {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-top: 20px;
+    min-height: 300px;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* --- Melhorias Visuais e Funcionais --- */
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+#input-area {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+#taskInput {
+    padding: 10px;
+    width: 300px;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+#taskInput:focus {
+    border-color: #000;
+}
+
+#addBtn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#addBtn:hover {
+    background-color: #333;
+}
+
+#taskList {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-right: 20px; /* Adicionado para não encostar na borda direita */
+}
+
+#taskList li {
+    padding: 12px;
+    margin-bottom: 8px;
+    border-left: 5px solid #000;
+    border-radius: 4px;
+    background: white;
+    display: flex;
+    justify-content: space-between; /* Mantém o texto e o botão em pontas opostas */
+    align-items: center;
+}
+
+#taskList li button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#taskList li button:hover {
+    background: #cc0000;
+}
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    #input-area {
+        flex-direction: column;
+    }
+    #taskInput {
+        width: 100%;
+    }
+}
