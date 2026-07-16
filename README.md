@@ -22,3 +22,6 @@ Clone este repositório:
 git clone [https://github.com/fabiovnucci/meu-task-dashboard.git](https://github.com/fabiovnucci/meu-task-dashboard.git)
 
 Abra o arquivo index.html em qualquer navegador.
+
+# Mycon Task Dashboard
+🚀 [Acesse o Mycon Task Dashboard aqui](https://fabiovnucci.github.io/meu-task-dashboard/)
