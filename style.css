@@ -1,9 +1,16 @@
-/* Estrutura Base (Mantida) */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   /* border: 1px solid rgb(243, 23, 7); */
+}
+
+body {
+    background: linear-gradient(to bottom, #ffffff, #000000);
+    color: #333;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -14,26 +21,8 @@ header {
 }
 
 main {
-    background-color: #ffffff;
-    padding-left: 20px;
-    padding-top: 20px;
-    min-height: 300px;
-}
-
-footer {
-    background-color: black;
-    color: whitesmoke;
-    text-align: center;
+    flex: 1;
     padding: 20px;
-    margin-top: 20px;
-}
-
-/* --- Melhorias Visuais e Funcionais --- */
-
-body {
-    background-color: #f9f9f9;
-    color: #333;
-    font-family: Arial, sans-serif;
 }
 
 #input-area {
@@ -70,7 +59,6 @@ body {
 #taskList {
     list-style-type: none;
     margin-top: 20px;
-    padding-right: 20px; /* Adicionado para não encostar na borda direita */
 }
 
 #taskList li {
@@ -80,7 +68,7 @@ body {
     border-radius: 4px;
     background: white;
     display: flex;
-    justify-content: space-between; /* Mantém o texto e o botão em pontas opostas */
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -97,12 +85,35 @@ body {
 #taskList li button:hover {
     background: #cc0000;
 }
-/* Responsividade para telas pequenas */
+
+/* RODAPÉ */
+.main-footer {
+    width: 100%;
+    padding: 20px 5%;
+    background: #4a6a94;
+    color: #ffffff;
+    border-top: 3px solid #27ae60;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    text-align: center;
+}
+
+/* CELULAR */
 @media (max-width: 600px) {
     #input-area {
         flex-direction: column;
     }
     #taskInput {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-footer {
+        flex-direction: column;
     }
 }
