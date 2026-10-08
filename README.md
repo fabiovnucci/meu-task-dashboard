@@ -9,6 +9,7 @@ CSS3: Estilização, layout responsivo com Flexbox.
 JavaScript (Vanilla): Lógica de manipulação do DOM e eventos.
 
 ⚙️ Funcionalidades
+
 Adição dinâmica de tarefas.
 
 Remoção de itens da lista.
@@ -23,5 +24,5 @@ git clone [https://github.com/fabiovnucci/meu-task-dashboard.git](https://github
 
 Abra o arquivo index.html em qualquer navegador.
 
-# Mycon Task Dashboard
-🚀 [Acesse o Mycon Task Dashboard aqui](https://fabiovnucci.github.io/meu-task-dashboard/)
+# Meu Task Dashboard
+🚀 [Acesse o Meu Task Dashboard aqui](https://fabiovnucci.github.io/meu-task-dashboard/)
